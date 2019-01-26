@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class DialogueAdm : MonoBehaviour
 {
     public NPC npc;
-    
+    public Image image;
     public Text nameTxt;
     public Text dialogueTxt;
+    
     public GameObject dialogueBox;
     //Fila com as setenças 
     public Queue<string> sentences;
@@ -28,6 +29,7 @@ public class DialogueAdm : MonoBehaviour
         player.talking = true;
         //Iguala
         nameTxt.text = npc.name;
+        image.sprite = npc.img;
         
           
         sentences.Clear();

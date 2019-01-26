@@ -9,6 +9,7 @@ public class NPC : MonoBehaviour
 
     private DialogueAdm dialogueAdm;
     public string name;
+    public Sprite img;
 
     public string[] sentences;
     public GameObject dialogueBox;
@@ -16,8 +17,6 @@ public class NPC : MonoBehaviour
     //Instanciou o Player aqui pra pegar a variavel booleana Talking
     private PlayerMove player;
      
-     public Vector2 la;
-     public Vector2 lo;
 
     
     void Start()
