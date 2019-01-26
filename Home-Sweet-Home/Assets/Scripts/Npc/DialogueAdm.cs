@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DialogueAdm : MonoBehaviour
 {
     public NPC npc;
+    
     public Text nameTxt;
     public Text dialogueTxt;
     public GameObject dialogueBox;
@@ -27,6 +28,7 @@ public class DialogueAdm : MonoBehaviour
         player.talking = true;
         //Iguala
         nameTxt.text = npc.name;
+        
           
         sentences.Clear();
 
@@ -65,9 +67,12 @@ public class DialogueAdm : MonoBehaviour
     }
 
     void EndDialogue()
-    {
+    {  
+        print("Anda porra");
+        player.curSpeed = player.maxSpeed;
         dialogueBox.SetActive(false);
         player.talking = false;
+        
     }
 }
 
