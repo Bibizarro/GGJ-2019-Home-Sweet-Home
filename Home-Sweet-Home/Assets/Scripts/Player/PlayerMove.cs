@@ -14,19 +14,14 @@ public class PlayerMove : MonoBehaviour
     public bool talking;
     private Animator anim;
 
-    //changing idle
-
-    private SpriteRenderer sp;
-    [SerializeField] private Sprite sideways;
-    [SerializeField] private Sprite behind;
-    [SerializeField] private Sprite front;
+    [SerializeField]private GameObject fingertip;
     
     void Start()
     {
       rb = GetComponent<Rigidbody2D>();   
       talking = false; 
-     // anim = GetComponent<Animator>();
-      sp = GetComponent<SpriteRenderer>();
+     anim = GetComponent<Animator>();
+      
       curSpeed = maxSpeed;
     }
     
@@ -40,7 +35,7 @@ public class PlayerMove : MonoBehaviour
 
       else
       {
-       movementInput = Vector2.right * Input.GetAxis("Horizontal") + Vector2.up * Input.GetAxis("Vertical") ;    
+       movementInput = Vector2.right * Input.GetAxisRaw("Horizontal") + Vector2.up * Input.GetAxisRaw("Vertical") ;    
       }
       
       
@@ -56,29 +51,31 @@ public class PlayerMove : MonoBehaviour
 
      void Animating()
      {
-       //anim.SetFloat("SideWalking" , movementInput.x);
+       print("xis" + (int)movementInput.x);
+       print("yis" +(int)movementInput.y);
+       anim.SetInteger("xMovement" , (int)movementInput.x);
+       anim.SetInteger("yMovement" , (int)movementInput.y);
        if(movementInput.x > 0)
        {
-         sp.sprite = sideways;
          transform.eulerAngles = new Vector2(0,0);
+         fingertip.transform.eulerAngles = new Vector3(0,0,90);
        }
 
         if(movementInput.x < 0)
        {
-         sp.sprite = sideways;
          transform.eulerAngles = new Vector2(0,180);
+         fingertip.transform.eulerAngles = new Vector3(0,0,-90);
        }
 
        if(movementInput.y > 0)
        {
-         sp.sprite = front;
-         transform.eulerAngles = new Vector2(180,0);
+         fingertip.transform.eulerAngles = new Vector3(0,0,180);
        }
 
         if(movementInput.y < 0)
        {
-         sp.sprite = behind;
-         transform.eulerAngles = new Vector2(-180,0);
+        
+         fingertip.transform.eulerAngles = new Vector3(0,0,0);
        }
 
      }
