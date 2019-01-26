@@ -7,7 +7,6 @@ public class DialogueAdm : MonoBehaviour
 {
     public NPC npc;
     public Image image;
-    public Text nameTxt;
     public Text dialogueTxt;
     
     public GameObject dialogueBox;
@@ -28,8 +27,9 @@ public class DialogueAdm : MonoBehaviour
         //playerTalkin fica true
         player.talking = true;
         //Iguala
-        nameTxt.text = npc.name;
         image.sprite = npc.img;
+
+        Singleton.GetInstance.weapon.canShot = false;
         
           
         sentences.Clear();
@@ -63,7 +63,8 @@ public class DialogueAdm : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueTxt.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(0.1f);
+            
         }
 
     }
@@ -74,6 +75,7 @@ public class DialogueAdm : MonoBehaviour
         player.curSpeed = player.maxSpeed;
         dialogueBox.SetActive(false);
         player.talking = false;
+        Singleton.GetInstance.weapon.canShot = true;
         
     }
 }

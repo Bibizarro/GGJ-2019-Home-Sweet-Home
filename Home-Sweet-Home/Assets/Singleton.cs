@@ -8,6 +8,7 @@ public class Singleton : MonoBehaviour
   public GameObject fingertip;
   private static Singleton instance;
     
+    public Weapon weapon;
    public static Singleton GetInstance
    {
        get

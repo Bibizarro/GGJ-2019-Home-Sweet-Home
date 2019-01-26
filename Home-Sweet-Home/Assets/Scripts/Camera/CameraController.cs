@@ -19,6 +19,6 @@ public class CameraController : MonoBehaviour
         pos.y = Singleton.GetInstance.player.transform.position.y;
         pos.y = Mathf.Clamp(pos.y,minCameraPos.y, maxCameraPos.y);
 
-        transform.position = new Vector3(pos.x,pos.y ,transform.position.y);
+        transform.position = new Vector3(pos.x,pos.y ,transform.position.z);
     }
 }

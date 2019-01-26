@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
   
     [SerializeField] private float cooldown;
-    private bool canShot;
+    public bool canShot;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawn;
     void Start()

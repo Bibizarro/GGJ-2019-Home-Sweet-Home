@@ -8,7 +8,6 @@ public class NPC : MonoBehaviour
     //public DialogueThings dialogue;
 
     private DialogueAdm dialogueAdm;
-    public string name;
     public Sprite img;
 
     public string[] sentences;
