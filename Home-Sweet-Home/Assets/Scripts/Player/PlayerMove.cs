@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerMove : MonoBehaviour
 {
-
+    private Scene curScene;
     private Vector2 movementInput;
     [HideInInspector]public float curSpeed;
 
@@ -18,6 +19,7 @@ public class PlayerMove : MonoBehaviour
     
     void Start()
     {
+      GettingPos();
       rb = GetComponent<Rigidbody2D>();   
       talking = false; 
      anim = GetComponent<Animator>();
@@ -49,10 +51,21 @@ public class PlayerMove : MonoBehaviour
          rb.velocity = movementInput;
      }
 
+     void GettingPos()
+     {
+       curScene = SceneManager.GetActiveScene();
+       switch(curScene.name)
+       {
+         case "Kitchen":
+         transform.position = Singleton.GetInstance.kitchenPlayerPos.position;
+         break;
+       }
+     }
+
+
      void Animating()
      {
-       print("xis" + (int)movementInput.x);
-       print("yis" +(int)movementInput.y);
+       
        anim.SetInteger("xMovement" , (int)movementInput.x);
        anim.SetInteger("yMovement" , (int)movementInput.y);
        if(movementInput.x > 0)

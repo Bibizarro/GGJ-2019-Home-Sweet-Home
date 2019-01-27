@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 6a9d4a51a5022954584955ef3a5cffe8
+guid: d05c276079848bd429eeb457fdf59a0f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Paredes_0
-    21300002: Paredes_1
-    21300004: Paredes_2
-    21300006: Paredes_3
+    21300000: Janela krai_0
+    21300002: Janela krai_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -110,47 +108,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Paredes_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5b32fb1722f7464d89cf60c774a27e8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paredes_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 303cd1b52e5c9524ead3467068c38b40
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Paredes_2
+      name: Janela krai_0
       rect:
         serializedVersion: 2
         x: 0
@@ -164,13 +122,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 813652fe12a5d0047b379681dab620e1
+      spriteID: e06253c62620fdd41be3efc14d38395b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Paredes_3
+      name: Janela krai_1
       rect:
         serializedVersion: 2
         x: 32
@@ -184,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7e9f20460fb9f042b2aa0590b1450f4
+      spriteID: 42018b3b8680c4f40b1ac0eb4d2a5c88
       vertices: []
       indices: 
       edges: []
@@ -192,7 +150,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7594b3a93c1fa9649aedaca654d4e0d7
+    spriteID: 8fc01d9688a0de349af50298f518251e
     vertices: []
     indices: 
     edges: []

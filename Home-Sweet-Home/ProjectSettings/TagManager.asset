@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bounds
   - Family
+  - SceneChanger
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,10 @@ public class Singleton : MonoBehaviour
 {
     public GameObject player;
   public GameObject fingertip;
+  public Transform kitchenPlayerPos;
   private static Singleton instance;
+
+
     
     public Weapon weapon;
    public static Singleton GetInstance
