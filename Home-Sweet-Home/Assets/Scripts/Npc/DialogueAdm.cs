@@ -5,10 +5,9 @@ using UnityEngine.UI;
 
 public class DialogueAdm : MonoBehaviour
 {
-    public NPC npc;
+    
     public Image image;
     public Text dialogueTxt;
-    
     public GameObject dialogueBox;
     //Fila com as setenças 
     public Queue<string> sentences;
@@ -20,21 +19,21 @@ public class DialogueAdm : MonoBehaviour
        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();   
     }
      
-     public void StartDialogue()
+     public void StartDialogue(DialogueThings dialogue)
     {   
         //Ativa caixa de dialogo
         dialogueBox.SetActive(true);
         //playerTalkin fica true
         player.talking = true;
         //Iguala
-        image.sprite = npc.img;
+        image.sprite = dialogue.img;
 
         Singleton.GetInstance.weapon.canShot = false;
         
           
         sentences.Clear();
 
-        foreach (string sentence in npc.sentences)
+        foreach (string sentence in dialogue.sentences)
 
             {
             sentences.Enqueue(sentence);
