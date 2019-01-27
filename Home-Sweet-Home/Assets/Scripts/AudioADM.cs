@@ -1,11 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class AudioManager : MonoBehaviour {
+public class AudioADM : MonoBehaviour {
 
-	public static AudioManager instance;
+	public static AudioADM instance;
 	public Sound[] sounds;
 
 	void Awake() {
