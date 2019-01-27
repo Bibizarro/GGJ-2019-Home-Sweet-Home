@@ -47,8 +47,14 @@ TagManager:
   - name: NPC
     uniqueID: 3263014017
     locked: 0
+  - name: BackObjects
+    uniqueID: 3589738053
+    locked: 0
   - name: Player
     uniqueID: 2110683827
+    locked: 0
+  - name: Objects
+    uniqueID: 1397514745
     locked: 0
   - name: UI
     uniqueID: 464722513

@@ -9,9 +9,27 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/Menu _ Credis/Menu.unity
+    guid: 2c78c1dfc3db60440a5d31637dd4bb0d
+  - enabled: 1
+    path: Assets/Scenes/Menu _ Credis/Credits.unity
+    guid: 6867a4cd874b3ac45aa4bb44fd12e958
+  - enabled: 1
     path: Assets/Scenes/Nha.unity
     guid: cde838d469547c947b18098b609d97c8
   - enabled: 1
     path: Assets/Scenes/Kitchen.unity
     guid: 23eeb3877b3bd344e841e5253982f303
+  - enabled: 1
+    path: Assets/Scenes/KiddoRoom.unity
+    guid: 7a3749f4d6915474fb1b67026c28e2a8
+  - enabled: 1
+    path: Assets/Scenes/Upstairs.unity
+    guid: decc0170f751b1843951429b30a59d3a
+  - enabled: 1
+    path: Assets/Scenes/DadRoom.unity
+    guid: 221391d0ed493bf4b9fe235bab5d8995
+  - enabled: 1
+    path: Assets/Scenes/BrotherRoom.unity
+    guid: 526a357f649066d43931546f9889db13
   m_configObjects: {}

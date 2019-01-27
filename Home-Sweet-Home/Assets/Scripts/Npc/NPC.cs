@@ -13,6 +13,8 @@ public class NPC : MonoBehaviour
 
     //public string[] sentences;
     public Sprite mortoImg;
+
+    public Sprite mortoFace;
      public string[] dieSentences;
     public GameObject dialogueBox;
     //public GameObject pressButton;
@@ -26,13 +28,12 @@ public class NPC : MonoBehaviour
     void Start()
     {
     player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMove>();
-
     }
     
     void Die()
     {
         
-         dialogue.img = mortoImg;
+         dialogue.img = mortoFace;
           spriteRenderer.sprite = mortoImg;
          dialogue.sentences = dieSentences;
          return;
@@ -62,7 +63,6 @@ public class NPC : MonoBehaviour
         //se colidor com tag Player e apertar , entra
         if (Input.GetKeyDown(KeyCode.E) && coll.tag == "Player" )
         {
-           
            if (!dialogueBox.activeSelf)
             {
                   FindObjectOfType<DialogueAdm>().StartDialogue(dialogue);
@@ -77,6 +77,23 @@ public class NPC : MonoBehaviour
         }
         #endregion
     }
+
+
+   /*  void DistanceDialogues()
+    {
+          if(Singleton.GetInstance.gm.curScene.name == "Nha" && PlayerPrefs.GetInt("JustEnteredHouse") == 0)
+           {
+               FindObjectOfType<DialogueAdm>().StartDialogue(Singleton.dialogue);
+
+               if (Input.GetKeyDown(KeyCode.E))
+              {
+                    FindObjectOfType<DialogueAdm>().NextSentence();
+              }
+
+           }*/
+
+
+    }
       
       //Pra quando sair a bola vrmelha não ficar ativa
      // void OnTriggerExit2D(Collider2D coll)
@@ -87,4 +104,5 @@ public class NPC : MonoBehaviour
          // }
 
      // }
-}
+
+

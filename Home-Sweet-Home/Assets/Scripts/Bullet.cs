@@ -18,7 +18,7 @@ void Start()
 {
 StartCoroutine(SelfDestruct());
  transform.eulerAngles = new Vector2(0,0);
-shotDirection = -Singleton.GetInstance.fingertip.transform.up;
+shotDirection = -GameObject.Find("Fingertip").transform.up;
 }
 void Update()
 {

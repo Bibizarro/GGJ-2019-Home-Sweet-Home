@@ -6,6 +6,11 @@ public class Singleton : MonoBehaviour
 {
     public GameObject player;
   public GameObject fingertip;
+  public Weapon weapon;
+
+  public GameObject shooter;
+
+  [Header("Position Shit")]
   public Transform kitchenPlayerPos;
 
   public Transform gotUpstairsPlayerPos;
@@ -22,11 +27,25 @@ public class Singleton : MonoBehaviour
 
     public Transform brotherRoomPlayerPos;
      public Transform kiddoRoomPlayerPos;
+
+     public Transform justStartedPos;
+
+     public GameManager gm;
+
+
+     [Header("NPC")]
+
+     public NPC dad;
   private static Singleton instance;
+
+  private void Awake() 
+  {
+      gm = GameObject.FindObjectOfType<GameManager>();
+  }
 
 
     
-    public Weapon weapon;
+    
    public static Singleton GetInstance
    {
        get
