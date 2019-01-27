@@ -17,10 +17,12 @@ private Vector3 shotDirection;
 void Start()
 {
 StartCoroutine(SelfDestruct());
+ transform.eulerAngles = new Vector2(0,0);
 shotDirection = -Singleton.GetInstance.fingertip.transform.up;
 }
 void Update()
 {
+   
 transform.Translate(shotDirection * speed);
 }
 
@@ -29,18 +31,20 @@ void FixedUpdate()
 
 RaycastHit2D hit = Physics2D.Raycast(transform.position , transform.up , rayDistance);
 
-if(hit.collider.CompareTag("Family"))
+if(hit.collider != null)
+{
+ if(hit.collider.CompareTag("Family"))
 {
 //vai killar
 }
 
-else if(hit.collider.CompareTag("Bounds"))
+else  if(hit.collider.CompareTag("Bounds"))
 {
     gameObject.SetActive(false);
 }
 
 }
-
+}
 IEnumerator SelfDestruct()
 {
 yield return new WaitForSeconds(lifeTime);
