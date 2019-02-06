@@ -420,6 +420,69 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dieSentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1003976851}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 579175218}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.img
+      value: 
+      objectReference: {fileID: 21300000, guid: 5e669446504a8c6419ad0fe97355266e,
+        type: 3}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: mortoImg
+      value: 
+      objectReference: {fileID: 21300000, guid: 1ba7b5cbc59f670408b3d0b3cbd728ae,
+        type: 3}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: GURI, VEM AQUI LOGO, P@%#$@
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "T\xF4 sem o abridor, vai pegar no meu quarto, guri!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dieSentences.Array.data[0]
+      value: Morri
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dieSentences.Array.data[1]
+      value: Mas passo bem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: mortoFace
+      value: 
+      objectReference: {fileID: 21300000, guid: 1ba7b5cbc59f670408b3d0b3cbd728ae,
+        type: 3}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: GURI VAI PEGAR LOGO!! P@#$%&@
+      objectReference: {fileID: 0}
     - target: {fileID: 7441097300997040263, guid: 40e3af20423737942ab68de31b7b470e,
         type: 3}
       propertyPath: m_Name
@@ -495,69 +558,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dieSentences.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 1003976851}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogueBox
-      value: 
-      objectReference: {fileID: 579175218}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.img
-      value: 
-      objectReference: {fileID: 21300000, guid: 5e669446504a8c6419ad0fe97355266e,
-        type: 3}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: mortoImg
-      value: 
-      objectReference: {fileID: 21300000, guid: 1ba7b5cbc59f670408b3d0b3cbd728ae,
-        type: 3}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: GURI, VEM AQUI LOGO, P@%#$@
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: "T\xF4 sem o abridor, vai pegar no meu quarto, guri!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dieSentences.Array.data[0]
-      value: Morri
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dieSentences.Array.data[1]
-      value: Mas passo bem
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: mortoFace
-      value: 
-      objectReference: {fileID: 21300000, guid: 1ba7b5cbc59f670408b3d0b3cbd728ae,
-        type: 3}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[2]
-      value: GURI VAI PEGAR LOGO!! P@#$%&@
       objectReference: {fileID: 0}
     - target: {fileID: 7441097300997040267, guid: 40e3af20423737942ab68de31b7b470e,
         type: 3}
@@ -725,6 +725,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: bolsonalo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 'pow pow
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogue.img
+      value: 
+      objectReference: {fileID: 21300000, guid: acf5148fe014e174fa1237dcdaf4a154,
+        type: 3}
+    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 579175218}
     - target: {fileID: 7441097300997040263, guid: 40e3af20423737942ab68de31b7b470e,
         type: 3}
       propertyPath: m_Name
@@ -801,34 +829,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 5d5abbe7a76d3b44985f5f0c8c8c0259,
         type: 3}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: bolsonalo
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.sentences.Array.data[1]
-      value: 'pow pow
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogue.img
-      value: 
-      objectReference: {fileID: 21300000, guid: acf5148fe014e174fa1237dcdaf4a154,
-        type: 3}
-    - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: dialogueBox
-      value: 
-      objectReference: {fileID: 579175218}
     - target: {fileID: 2914950553186798824, guid: 40e3af20423737942ab68de31b7b470e,
         type: 3}
       propertyPath: m_Offset.x
@@ -1086,6 +1086,101 @@ Transform:
   - {fileID: 2062548449}
   m_Father: {fileID: 0}
   m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1765798376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765798379}
+  - component: {fileID: 1765798378}
+  - component: {fileID: 1765798377}
+  m_Layer: 0
+  m_Name: monstro frente_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1765798377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765798376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a9375080a18bf4c8e5f0b6ddd01227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 1
+  height: 1
+  speed: 1
+--- !u!212 &1765798378
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765798376}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 2110683827
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4b5c196b26decbb42a3aa99597794862, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3, y: 3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1765798379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765798376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.97, y: -2.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1864601099
 GameObject:
@@ -1532,6 +1627,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1568042742775466282, guid: 02133a01883957943bd6baecf8dd02c0,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 59f2f0b256bf8ce4abc802271ea45c9f,
+        type: 3}
     - target: {fileID: 913080302278939133, guid: 02133a01883957943bd6baecf8dd02c0,
         type: 3}
       propertyPath: m_Name
@@ -1647,12 +1748,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 142561869}
-    - target: {fileID: 1568042742775466282, guid: 02133a01883957943bd6baecf8dd02c0,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 59f2f0b256bf8ce4abc802271ea45c9f,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02133a01883957943bd6baecf8dd02c0, type: 3}
 --- !u!1001 &1782978834356902924
