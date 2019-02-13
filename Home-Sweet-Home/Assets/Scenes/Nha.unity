@@ -178,7 +178,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &133438938
 MonoBehaviour:
@@ -420,6 +420,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7441097300997040263, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: m_Name
+      value: Pai
+      objectReference: {fileID: 0}
+    - target: {fileID: 7441097300997040263, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Family
+      objectReference: {fileID: 0}
     - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -482,11 +492,6 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
       value: GURI VAI PEGAR LOGO!! P@#$%&@
-      objectReference: {fileID: 0}
-    - target: {fileID: 7441097300997040263, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: m_Name
-      value: Pai
       objectReference: {fileID: 0}
     - target: {fileID: 7441097300997040266, guid: 40e3af20423737942ab68de31b7b470e,
         type: 3}
@@ -725,6 +730,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7441097300997040263, guid: 40e3af20423737942ab68de31b7b470e,
+        type: 3}
+      propertyPath: m_Name
+      value: TV
+      objectReference: {fileID: 0}
     - target: {fileID: 7441097300997040260, guid: 40e3af20423737942ab68de31b7b470e,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
@@ -753,11 +763,6 @@ PrefabInstance:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 579175218}
-    - target: {fileID: 7441097300997040263, guid: 40e3af20423737942ab68de31b7b470e,
-        type: 3}
-      propertyPath: m_Name
-      value: TV
-      objectReference: {fileID: 0}
     - target: {fileID: 7441097300997040266, guid: 40e3af20423737942ab68de31b7b470e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1098,8 +1103,9 @@ GameObject:
   - component: {fileID: 1765798379}
   - component: {fileID: 1765798378}
   - component: {fileID: 1765798377}
+  - component: {fileID: 1765798380}
   m_Layer: 0
-  m_Name: monstro frente_0
+  m_Name: Beholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1117,9 +1123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a9375080a18bf4c8e5f0b6ddd01227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 1
-  height: 1
-  speed: 1
+  width: 5
+  height: 5
+  speed: 2
+  offset: {x: -12.97, y: -2.47}
 --- !u!212 &1765798378
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1182,6 +1189,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1765798380
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765798376}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6
 --- !u!1 &1864601099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,17 +1650,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 913080302278939133, guid: 02133a01883957943bd6baecf8dd02c0,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
     - target: {fileID: 1568042742775466282, guid: 02133a01883957943bd6baecf8dd02c0,
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 59f2f0b256bf8ce4abc802271ea45c9f,
         type: 3}
-    - target: {fileID: 913080302278939133, guid: 02133a01883957943bd6baecf8dd02c0,
-        type: 3}
-      propertyPath: m_Name
-      value: Canvas
-      objectReference: {fileID: 0}
     - target: {fileID: 913080302278939129, guid: 02133a01883957943bd6baecf8dd02c0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1884,7 +1907,7 @@ PrefabInstance:
     - target: {fileID: 4544957123734282823, guid: e23a62f7408be5242abae027e55e6c1a,
         type: 3}
       propertyPath: m_Name
-      value: PlayerWithGun
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4544957123734282818, guid: e23a62f7408be5242abae027e55e6c1a,
         type: 3}
@@ -1993,7 +2016,7 @@ PrefabInstance:
     - target: {fileID: 4701184291039086005, guid: 42ea10b390a5c7446b99c16c7f5a0ada,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4701184291039086005, guid: 42ea10b390a5c7446b99c16c7f5a0ada,
         type: 3}

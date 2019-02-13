@@ -15,13 +15,8 @@ public class Beholder : MonoBehaviour
 
     float timeCounter;
 
-    
+    [SerializeField] private Vector2 offset;
 
-    private void Start() {
-        x = transform.position.x;
-        y = transform.position.y;
-        
-    }
     
     void Update()
     {
@@ -29,6 +24,6 @@ public class Beholder : MonoBehaviour
         x = Mathf.Cos(timeCounter*speed) * width;
         y = Mathf.Sin(timeCounter*speed) * height;
 
-        transform.position =  new Vector3(x, y, transform.position.z);
+        transform.position =  new Vector3(x+offset.x, y + offset.y, transform.position.z);
     }
 }

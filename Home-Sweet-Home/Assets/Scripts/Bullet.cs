@@ -35,7 +35,8 @@ if(hit.collider != null)
 {
  if(hit.collider.CompareTag("Family"))
 {
-//vai killar
+ hit.collider.gameObject.SendMessage("Die");
+ gameObject.SetActive(false);
 }
 
 else  if(hit.collider.CompareTag("Bounds"))

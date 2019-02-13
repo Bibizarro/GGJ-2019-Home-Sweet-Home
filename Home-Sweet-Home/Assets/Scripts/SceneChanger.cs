@@ -8,6 +8,15 @@ public class SceneChanger : MonoBehaviour
 [SerializeField] private Animator transitions;
 [SerializeField] private float changeTime;
 
+
+private void Start() 
+{
+  //  if(SceneManager.GetActiveScene().name == "Credits")
+   // {
+  //      changeTime = 25f;
+   //     StartCoroutine(LoadingScene());
+   // }
+}
 IEnumerator LoadingScene()
 {
 PlayerPrefs.SetString("previousScene",Singleton.GetInstance.gm.curScene.name);
